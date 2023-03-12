@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱心照片</title>
+    <link rel="stylesheet" href="../CSS_reset.css">
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 200px auto;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: pink;
+            filter: drop-shadow(0 0 10px rgba(216, 24, 88, .5));
+        }
+
+        img{
+            width: 450px;
+            clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+            --a:radial-gradient(circle at 60% 63%, #000 64%, #0000 65%) top left / 50% 50% no-repeat, 
+            radial-gradient(circle at 40% 63%, #000 64%, #0000 65%) top right / 50% 50% no-repeat, 
+            radial-gradient(#000 0 0) bottom / 100% 50% no-repeat,
+            -webkit-mask:var(--a);
+            mask:var(--a);
+        }
+    </style>
+</head>
+<body>
+    <img src="./01yusnshen.jpg" alt="">
+</body>
+</html>

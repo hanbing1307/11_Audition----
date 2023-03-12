@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中的遍历函数</title>
+     <script>
+    /*      
+        js中的遍历函数
+            1、forEach:遍历数组
+            2、every：遍历数组，返回值遇到false时遍历终止
+            3、map：修改并返回新数组
+            4、filter:过滤并返回新数组
+            5、find:找到并返回数组元素
+            6、findIndex:找到并返回元素索引
+            7、some:是否存在某个元素
+            8、flatMap:拉平数组
+            9、reduce:求和
+    */
+    // forEach:遍历数组
+    //  const arr = [1, 2, 3];
+    //  arr.forEach(v => {
+    //     console.log(v)
+    //     }
+    // )
+
+     // 如果需要找到条件之后就终止函数，就可以使用every
+    //  const arr = [1, 2, 3];
+    //  arr.every(
+    //     v => {
+    //         console.log(v);
+    //         return false
+    //     }
+    //  )
+
+     // map修改并返回新数组
+    //  const arr = [1, 2, 3];
+    //  console.log(
+    //     arr.map(
+    //         v => {
+    //             return 1
+    //         }
+    //     )
+    //  )
+
+    //filter:过滤并返回新数组
+    //  const arr = [1, 2, 3];
+    //  console.log(
+    //     arr.filter(
+    //         v => {
+    //             return v == 1
+    //         }
+    //     )
+    //  )
+
+    //find:和find类似，不过找到一个就停止函数，不会继续找
+    //  const arr = [1, 2, 3];
+    // console.log(
+    //     arr.find(
+    //         v => {
+    //             return v === 1;
+    //         }
+    //     )
+    // )
+
+    // findIndex:找到并返回元素索引
+    // const arr = [1, 2, 3]
+    // console.log(arr.findIndex(v => {
+    //     return v === 1
+    // }))
+
+    // some:是否存在某个元素
+    // const arr = [1, 2, 3]
+    // console.log(arr. some(v => {
+    //     return v === 1
+    // }))
+
+    // flatMap:拉平数组   可以拉平数组，降低一维。将二维变为一维，但是三维不能变为一维，只能变成二维
+    // const arr = [1, 2, 3, [4], [2]]
+    // console.log(arr. flatMap(v => {
+    //     return v
+    // }))
+
+    // const arr = [1, 2, 3, [4], [2, [3]]]
+    // console.log(arr. flatMap(v => {
+    //     return v
+    // }))
+
+    // reduce:求和
+    const arr = [1, 2, 3]
+    console.log(arr. reduce((sum, v) => {
+        return sum + v
+    }))
+     </script>
+</head>
+<body>
+
+</body>
+</html>

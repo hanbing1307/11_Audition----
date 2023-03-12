@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧边栏模拟百度新闻热榜</title>
+    <style>
+        body, h3, ul{
+            margin: 0;
+            padding: 0;
+        }
+        .news{
+            width: 360px;
+            /* height: 400px; */
+            /* background-color: aqua; */
+            margin:50px auto ;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .news h3{
+            /* border: 1px solid red; */
+            /* 添加下外边距 */
+            margin-bottom: 20px; 
+        }
+
+        .news ul{
+            /* border: 1px solid red; */
+            list-style: none;/* 去掉li的圆点 */
+        }
+
+        .news ul li{
+            /* border: 1px solid blue; */
+            /* 添加高度 */
+            height: 35px;
+            /* 添加行高:内容会垂直居中 */
+            line-height: 35px;
+            /* 字体和颜色 */
+            font-size: 16px;
+            /* 添加底部边框，点状 */
+            border-bottom: 1px dotted #ddd;
+            
+        }
+
+        .news ul li a{
+            /* 字体颜色 */
+            color:#333;
+            /* 去掉超链接自带的下划线 */
+            text-decoration: none;
+            
+        }
+
+        .news ul li a:hover{
+            color: red;
+        }
+
+        .news ul li a span {
+            /* border: 1px solid red; */
+            /* 添加右外边距 */
+            margin-right: 10px;
+            /* 字体加粗 */
+            font-weight: 700;
+        }
+
+        /* 单独设置前三个序号的颜色 */
+        .col1{
+            color: red;
+        }
+
+        .col2{
+            color: #ff5c55;
+        }
+
+        .col3{
+            color:#ffa552;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h3>百度新闻热榜</h3>
+        <ul>
+            <li><a href=""><span class="col1">1</span>网站新闻栏</a></li>
+            <li><a href=""><span class="col2">2</span>网站新闻栏</a></li>
+            <li><a href=""><span class="col3">3</span>网站新闻栏</a></li>
+            <li><a href=""><span>4</span>网站新闻栏</a></li>
+            <li><a href=""><span>5</span>网站新闻栏</a></li>
+            <li><a href=""><span>6</span>网站新闻栏</a></li>
+            <li><a href=""><span>7</span>网站新闻栏</a></li>
+            <li><a href=""><span>8</span>网站新闻栏</a></li>
+            <li><a href=""><span>9</span>网站新闻栏</a></li>
+        </ul>
+    </div>
+</body>
+</html>

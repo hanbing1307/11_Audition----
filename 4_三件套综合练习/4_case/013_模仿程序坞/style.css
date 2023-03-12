@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    background: linear-gradient(45deg,#DF4466,#66ff33);
+}
+
+/* 定义程序坞容器样式 */
+.dock-container{
+    width: fit-content;
+    height: 100px;
+    background: rgba(255, 255, 255, .5);
+
+    display: flex;
+    gap: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.icon-inside{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 80px;
+    gap: 0.2em;
+    padding: 2px;
+}
+
+.icon-inside,.sub-icon-box{
+    transform: scale(0);
+}
+
+/* 给层序图标增加样式 */
+.icon-box{
+    background-color: rgba(251,251,251,.3);
+    width: 60px;
+    height: 60px;
+}
+
+.icon-box{
+    background-color: rgba(251,251,251.03);
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.icon-box:nth-child(1){
+    background-image: url(./image/分布式.png);
+}
+.icon-box:nth-child(2){
+    background-image: url(./image/版权.png);
+}
+.icon-box:nth-child(3){
+    background-image: url(./image/订单.png);
+}
+.icon-box:nth-child(4){
+    background-image: url(./image/分布式.png);
+}
+.icon-box:nth-child(5){
+    background-image: url(./image/版权.png);
+}
+.icon-box:nth-child(6){
+    background-image: url(./image/订单.png);
+}
+.icon-box:nth-child(7){
+    background-image: url(./image/分布式.png);
+}
+
+.sub-icon-box:nth-child(1){
+    background-image: url(./image/分布式.png);
+}
+.sub-icon-box:nth-child(2){
+    background-image: url(./image/版权.png);
+}
+.sub-icon-box:nth-child(3){
+    background-image: url(./image/订单.png);
+}
+
+.icon-box,.sub-icon-box{
+    transition: all 0.5s;
+}
+
+.cion-box:hover,.sub-icon-box:hover{
+    transform: scale(1.2);
+}
+
+.icon-box:hover .icon-inside,.sub-icon-box{
+transform: scale(1);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理解JS事件循环</title>
+    <script>
+     /* 
+        事件循环: JS是单线程的,但是又需要一种机制来处理多个块的执行,
+                 且执行每个块时仅调用js引擎,这种机制称为事件循环,与事件绑定概念没有关系
+
+        事件循环分为3部分:
+            - 主线程
+            - 宏队列
+            - 微队列
+                异步代码都会被丢进宏/微队列
+        宏任务: script, setTimeout, setInterval, setImmediate,  I/O, MutationObserve, UI rendering
+        微任务: process.nextTick, promise.then(), object.observe, MutationObserver
+
+        主线程只有一个,且执行顺序为:
+            - 1 先执行主线程
+            - 2 遇到宏任务放到宏队列
+            - 3 遇到微任务放到微队列
+            - 4 主线程执行完毕
+            - 5 执行微队列,微队列执行完毕
+            - 6 执行一次宏队列的任务,执行完毕
+            - 7 执行微队列,执行完毕
+            - 8 依次循环...(微队列 > 宏队列 > 微队列 > 宏队列)
+     */         
+    // 举例
+    Promise.resolve().then(() => {   // then() 微任务
+        console.log('Promise1')   
+        setTimeout(() => {          // setTimeout 宏任务
+            console.log('setTimeout2')
+        },0)
+    })
+    setTimeout(() => {
+        console.log('setTimeout1')
+        Promise.resolve().then(() => {
+            console.log('Promise2')
+        }) 
+    })
+    console.log('start')   // 主线程
+    
+    // 执行结果
+    // start
+    // Promise1
+    // setTimeout1
+    // Promise2
+    // setTimeout2
+    </script>
+</head>
+<body>
+
+     
+</body>
+</html>

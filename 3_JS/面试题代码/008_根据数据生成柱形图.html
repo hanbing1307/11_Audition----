@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>根据数据生成柱形图</title>
+    <!-- 
+        需求：根据用户输入四个季度的数据，可以生成柱形图
+     -->
+     <style>
+        .box{
+            /* 浮动 */
+            display: flex;
+            /* 宽高边框 */
+            width: 600px;
+            height: 400px;
+            border-left: 1px black solid;
+            border-bottom: 1px black solid;
+            /* 外边距 */
+            margin: 100px auto;
+            /* 主轴对齐方式 */
+            justify-content: space-around;
+            /* 侧轴对齐方式 */
+            align-items: flex-end;
+        }
+        .box > div{
+            display: flex;
+            /* width: 50px; */
+            height: 130px;
+            background-color: aqua;
+            /* 文字居中 */
+            text-align: center;
+            /* 更改主轴对齐方式 */
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box > div span{
+            margin-top: -30px;
+        }
+
+        .box > div h5{
+            margin-bottom: -30px;
+        }
+     </style>
+     
+</head>
+<body>
+    <div class="box">
+        <script>
+            // 因为prompt获取的数据类型为字符串，所以要转换成数字，用 +
+            let num = +prompt(`请输入你要输入几个季度？`);
+            let arr = [];
+            for(let i = 1; i <= 4; i++){
+                arr.push(+prompt(`请输入第${i}季度的数据`))
+            }
+            // console.log(arr)
+    
+            for(let j = 0; j < arr.length; j++){
+                document.write(`
+                    <div style = "height:${arr[j]}px">
+                        <span>${arr[j]}</span>
+                        <h5>第${j + 1}季度</h5>
+                    </div>
+                `)
+            }
+         </script>
+    </div>
+</body>
+</html>

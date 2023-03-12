@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实现响应式布局</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 如何实现响应式布局，大屏幕三等分、中屏幕二等分、小屏幕一等分 -->
+    <!-- 
+        页面布局元素如下，item数量随意
+        <div class="container"> 
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        思路：
+        通过自动查询屏幕大小，在达到预设的尺寸时，响应不同的等分代码
+
+        使用Grid布局可以轻松解决这个问题，使用其他方案的话，控制好等分的同时再控制好间距会非常头疼
+        grid-template-columns:控制等分
+        gap:控制间距
+     -->
+     <div class="container"> 
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

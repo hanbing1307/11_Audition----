@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获取用户信息</title>
+    <script>
+        /* 
+            目的：获取用户的名字、年龄、性别信息
+                    在控制台依次输出信息
+        */
+
+        // 定义一个uname变量用来存储用户的名字
+        let uname = prompt("请输入您的名字")
+        // 定义一个age变量用来存储用户的年龄
+        let age = prompt("请输入您的年龄")
+        // 定义一个gender变量用来存储用户的性别
+        let gender = prompt("请输入您的性别")
+
+        console.log(`"用户的名字是：${uname}"`)
+        console.log(`"用户的年龄是：${age}"`)
+        console.log(`"用户的性别是：${gender}"`)
+
+        // 上面的信息没有检测用户输入的内容，所以用户输入什么都会被控制台输出，实际开发中应添加检测内容，不符合的内容需要用户重新输入
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

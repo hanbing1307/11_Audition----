@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS判断数组的方法</title>
+</head>
+<body>
+    <!-- 
+        如何判断一个对象或一个值是否是一个数组
+        JS判断数组的方法（5种）：
+        1、通过Object.prototype.toString.call()判断；
+        2、通过原型链做判断；
+        3、通过ES6的Array.isArray()做判断；
+        4、通过instanceof做判断；
+        5、通过Array.prototype.isPrototypeOf做判断；
+        6、
+        
+     -->
+    <script>
+        // 1、通过Object.prototype.toString.call()判断；
+        console.log(Object.prototype.toString.call([]));
+        // 输出结果为[object Array]
+        console.log(Object.prototype.toString.call([]).slice(8,-1) === 'Array');
+        // 输出结果为True
+        // 2、通过原型链做判断
+    </script>
+</body>
+</html>

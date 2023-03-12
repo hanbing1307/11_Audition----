@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动计算学生成绩总分</title>
+    <!-- 引入css样式表清除浏览器默认样式 -->
+    <link rel="stylesheet" href="./CSS_reset.css">
+    <style>
+        /* 
+            题目：输入学生的各科（语文数学英语物理化学生物成绩，然后自动输出总分
+        */ 
+
+        table{
+            /* 设置宽边框 */
+            width: 600px;
+            
+            border: 1px black solid;
+            margin: 50px auto;
+            /* 设置文字居中 */
+            /* text-align: center; */
+            /* 设置边框间距 */
+            border-spacing: 0px;
+        }
+        
+        
+        td{
+            border: 1px black solid;
+            text-align: center;
+            padding: 10px 10px;
+        }
+        /* 设置隔行颜色不同 */
+        tr:nth-child(2n){
+            background-color: aqua;
+        }
+        tr:nth-child(2n+1){
+            background-color: skyblue;
+        }
+    </style>
+    
+</head>
+<body>
+    <table>
+        <caption class="title">学生成绩单</caption>
+        <tr>
+            <td>学生名字</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>总分</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+      
+    </table>
+
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影购票</title>
+    <link rel="stylesheet" href="./css/CSS_reset.css">
+</head>
+<body>
+    <!-- 
+        实现功能：
+        1、在页面左侧区域，单击“可选座位”，将座位设置为“已选座位”。一次最多选择5个座位。
+            右侧座位号汇总区域显示已选中的座位号，并显示电影票总价。
+        2、在页面左侧区域，单机“已选座位”，将座位设置为“可选座位”。
+            右侧选座信息汇总区域取消相应的座位号，并显示电影票总价。
+        3、单机页面右侧选座信息汇总区域座位号右上角的“X”，将座位设置为“可选座位”。
+            选座信息汇总区域取消相应的座位号，并显示电影票总价。
+        4、“已选座位”数量不为0时，“确认选座”按钮设置为可用状态，选座信息汇总区域显示。
+            “已选座位”数量为0时，“确认选座”按钮设置为不可用状态，选座信息汇总区域隐藏。
+     -->
+     <div class="seats-wrapper">
+        <div class="row"> 
+            <span class="seat selectable" data-column-id="10" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="9" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="8" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="7" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="6" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="5" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="4" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="3" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="2" data-row-id="1"></span>
+            <span class="seat selectable" data-column-id="1" data-row-id="1"></span>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东</title>
+    <!-- 引入网页图标：https://www.jd.com/favicon.ico -->
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- 引入全局样式 -->
+    <link rel="stylesheet" href="./css/CSS_reset.css">
+    <!-- 引入字体图标，要在全局样式后面 -->
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+    
+</head>
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="wrap header-box">
+            <!-- 顶部有logo为一部分，搜索栏为另一部分 -->
+            <div class="logo"></div>
+            <!-- 搜索栏外部容器 -->
+            <div class="search">
+                <!-- 搜索栏 -->
+                <div class="search-m">
+                    <!-- 下拉后吸顶显示的logo -->
+                    <div class="search-logo"></div>
+                    <!-- 搜索框 -->
+                    <div class="form">
+                        <!-- 关键字 -->
+                        <input type="text" class="keyword" placeholder="苹果手机">
+                        <div class="search-helper"></div>
+                        <!-- 按钮图标 -->
+                         <button class="iconfont">&#xe616</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+
+    <!-- 轮播图开始 -->
+    <div class="banner">
+        <div class="wrap banner-box">
+            <div class="banner-slide">
+                <div class="banner-slide-slide">
+                        <!-- 轮播图可以跳转，用超链接 -->
+                        <li><a href=""><img src="./images/lbt1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/lbt2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/lbt3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/lbt4.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/lbt5.jpg" alt=""></a></li>
+                        <!-- 添加轮播图中间的箭头 -->
+                        <!-- 点击上一张图片 -->
+                        <li><a href="" class="prev"></a></li>
+                        <!-- 点击下一张图片 -->
+                        <li><a href="" class="next"></a></li>
+                        <!--  添加轮播图下方的原点  -->
+                        <div class="slider_indicators">
+                            <i class ="active" href="javascript:;"></i>
+                            <i class ="active" href="javascript:;"></i>
+                            <i class ="active" href="javascript:;"></i>
+                            <i class ="active" href="javascript:;"></i>
+                            <i class ="active" href="javascript:;"></i>
+                            <i class ="active" href="javascript:;"></i>
+                            <i class ="active" href="javascript:;"></i>
+                            <i class ="active" href="javascript:;"></i>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图结束 -->
+    <!-- 引入自己的js样式 -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

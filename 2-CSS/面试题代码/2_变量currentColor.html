@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量currentColor</title>
+    <style>
+        /* 
+            练习：使父元素和子元素以及边框的颜色是一样的
+        */
+        div.parent{
+            margin-left: 100px;
+            color: yellow;
+            border: 2px solid currentColor;
+            width: 150px;
+            height: 150px;
+        }
+        /* 这样child不需要再设置颜色，且父元素更改颜色，子元素也会更改 */
+        div.child{
+            margin:4px;
+            border: 2px solid currentColor;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        我是父元素
+        <div class="child">
+            我是子元素
+        </div>
+    </div>
+</body>
+</html>
