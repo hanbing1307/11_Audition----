@@ -30,6 +30,7 @@ id选择符：100
 !important声明的样式优先级最高，如果冲突再进行计算。
 如果优先级相同，则选择最后出现的样式。
 继承得到的样式的优先级最低。
+
 5 CSS3新增伪类有那些?
 
 p:first-of-type 选择属于其父元素的首个元素
@@ -41,15 +42,13 @@ p:nth-child(2) 选择属于其父元素的第二个子元素
 :checked 单选框或复选框被选中。
 
 6 如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？
-
 div：
-
 border: 1px solid red;
 margin: 0 auto; 
 height: 50px;
 width: 80px;
-浮动元素的上下左右居中：
 
+浮动元素的上下左右居中：
 border: 1px solid red;
 float: left;
 position: absolute;
@@ -58,8 +57,8 @@ height: 100px;
 left: 50%;
 top: 50%;
 margin: -50px 0 0 -100px; 
-绝对定位的左右居中：
 
+绝对定位的左右居中：
 border: 1px solid black;
 position: absolute;
 width: 200px;
@@ -192,6 +191,7 @@ float的值不为none（默认）
 overflow的值不为visible（默认）
 display的值为inline-block、table-cell、table-caption
 position的值为absolute或fixed
+
 20 为什么会出现浮动和什么时候需要清除浮动？清除浮动的方式？
 
 浮动元素碰到包含它的边框或者浮动元素的边框停留。由于浮动元素不在文档流中，所以文档流的块框表现得就像浮动框不存在一样。浮动元素会漂浮在文档流的块框上。
